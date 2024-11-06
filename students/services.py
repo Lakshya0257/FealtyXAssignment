@@ -1,4 +1,5 @@
 from students.models import students, Student
+import json
 
 def create_student(data):
     new_student = Student(len(students) + 1, data['name'], data['age'], data['email'])

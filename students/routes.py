@@ -1,6 +1,7 @@
 from flask import Blueprint, jsonify, request
 from students.services import create_student, get_all_students, get_student_by_id, update_student, delete_student
 from students.summary import generate_student_summary
+import json
 
 students_blueprint = Blueprint('students', __name__)
 
